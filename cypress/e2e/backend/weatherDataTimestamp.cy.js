@@ -1,5 +1,5 @@
 describe('Weather Data for Timestamp Tests', () => {
-    const apiKey = '86773b8aea562a8e543377e5e58a2d22'; // Replace with your actual API key
+    //const apiKey = 'Replace_with_your_actual_API_key'
     const baseUrl = 'https://api.openweathermap.org/data/3.0/onecall/timemachine';
 
     it('handles correct API call for Weather Data for Timestamp', () => {
@@ -63,5 +63,6 @@ describe('Weather Data for Timestamp Tests', () => {
 
         });
     });
+
 
 });
