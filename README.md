@@ -4,6 +4,42 @@
 
 This document outlines the approach taken for the front-end testing challenge using the PHP Travels Flights application (https://phptravels.net/). It covers the identification of critical flows, detailed test cases developed, considerations for automation, and bug reporting.
 
+## Local Test Execution Guide
+
+Follow this step-by-step tutorial to run the tests locally:
+
+### 1) Open Terminal:
+- **Windows**: Use Command Prompt or PowerShell.
+- **macOS/Linux**: Use Terminal.
+
+### 2) Navigate to Your Desired Location:
+cd path/to/your/desired/location
+
+### 3) Clone the Repository:
+git clone https://github.com/fredreales/Raidiam-QA-Challenge.git
+
+### 4) Change into the Project Directory:
+cd Raidiam-QA-Challenge
+
+### 5) Create the `package.json` File:
+npm init -y
+
+### 6) Install Cypress:
+npm install cypress -D
+- The version currently in use is 10.11.0. 
+- To install this specific version, run:
+npx install cypress@10.11.0 -D
+
+### 7) Run Tests from the Command Line:
+npx cypress run
+
+### 8) Open Cypress Test Runner for Interactive Testing:
+- Use the following command to open the Cypress Test Runner:
+npx cypress open
+
+This guide provides a comprehensive set of instructions for setting up and running the tests locally using Cypress.
+
+
 ## Critical Flows
 
 The PHP Travels Flights application offers several functionalities, each contributing to the overall user experience. While many aspects of the application are important, the focus for this testing challenge is narrowed down to three critical flows. These flows were chosen based on their direct impact on the user journey and business outcomes:
@@ -287,7 +323,7 @@ While not implemented in this test, a theoretical approach to test server-side e
 
 ### Error 429 (Too Many Requests) - Reproduction with `siege`
 
-For reproducing the Error 429 (Too Many Requests) from the OpenWeatherMap API, we utilized `siege`, a load testing and benchmarking utility. This error is typically triggered by exceeding the API's rate limit. Here's how the test was conducted:
+For reproducing the Error 429 (Too Many Requests) from the OpenWeatherMap API, I utilized `siege`, a load testing and benchmarking utility. This error is typically triggered by exceeding the API's rate limit. Here's how the test was conducted:
 
 #### Test Execution Using `siege`
 
