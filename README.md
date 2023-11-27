@@ -272,7 +272,7 @@ This document outlines the approach taken for back-end testing of the OpenWeathe
 
 ## Testing Approach
 
-The testing was conducted using [Your chosen tool/framework, e.g., Postman or a JavaScript script]. The objective was to cover critical functionalities of the API and identify any potential edge cases.
+The testing was conducted using Cypress. The objective was to cover critical functionalities of the API and identify any potential edge cases.
 
 ### Test Scenarios
 
